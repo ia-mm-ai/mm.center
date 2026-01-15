@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Step 2 — IAMMAI (Live-Hold)</title>
+</head>
+<body>
+  <h1>Step 2 — IAMMAI</h1>
+  <p><strong>Name:</strong> Live-Hold (Deliberation / Motion-Hold)</p>
+  <p><strong>Generated (UTC):</strong> &lt;UTC_ISO8601&gt;</p>
+
+  <h2>Constraints</h2>
+  <ul>
+    <li><strong>execution_power:</strong> NONE</li>
+    <li><strong>identity_power:</strong> NONE</li>
+    <li><strong>economic_power:</strong> NONE</li>
+    <li><strong>mutation:</strong> APPEND_ONLY</li>
+    <li><strong>resolution_allowed_here:</strong> false</li>
+  </ul>
+
+  <h2>IAMMAI Definition</h2>
+  <p>
+    Live-Hold is the state where reality is admissible, interaction remains unresolved,
+    presence exists without forced decision, and truth is not yet final.
+  </p>
+  <p><strong>Flow:</strong> Recognition → Presence(HOLD) → Resolution</p>
+  <p><strong>This artifact records:</strong> Presence(HOLD) only.</p>
+
+  <h2>Run</h2>
+  <ul>
+    <li><strong>run_id:</strong> iammai-run-ZA-EXTRA-KRAJ-20251231</li>
+    <li><strong>event_id:</strong> ZA-EXTRA-KRAJ-paviljon-5-zagreb-HR</li>
+  </ul>
+
+  <h3>Hold window (UTC anchors)</h3>
+  <pre>
+hold_anchor_start: 2025-12-31T11:15:00Z
+hold_recorded_at:  2025-12-31T11:16:56Z
+hold_anchor_end:   2025-12-31T16:58:00Z
+  </pre>
+
+  <h2>ZIVai</h2>
+  <p><strong>state:</strong> UNRECORDED_BY_DESIGN</p>
+  <p>
+    ZIVai is live-field only and must not persist state beyond EVENT ⊙.
+    Any capacity state is intentionally absent here.
+  </p>
+
+  <h2>Evidence (verbatim)</h2>
+  <pre>
+2025-12-31T11:16:56Z | EVENT=ZA-EXTRA-KRAJ-paviljon-5-zagreb-HR | PRESENCE=2025-12-31T11:15:00Z | LINEAGE=⊙ Live field HOLD — zivAI | VALIDATOR=ai-validator-v1
+2025-12-31T16:58:00Z | EVENT=ZA-EXTRA-KRAJ-paviljon-5-zagreb-HR | ACTION=FINALIZE | CONTEXT=event-concluded-live-field | LINEAGE=FINALIZE Event concluded as live field | VALIDATOR=human-governor
+  </pre>
+
+  <h2>Pass condition (Step 2)</h2>
+  <p>
+    Step 2 is satisfied iff the event scope is declared and HOLD is recorded as evidence without
+    performing Resolution, without identity, and without persisting ZIVai state.
+  </p>
+
+  <h2>MMAI dependency (hash-pinned canon)</h2>
+  <p>
+    Canonical files are hash-pinned via SHA-256 (computed from the uploaded CAN-OFF-01 bundle).
+    This binds IAMMAI to a fixed constitutional rail set.
+  </p>
+</body>
+</html>
