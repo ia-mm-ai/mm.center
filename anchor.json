@@ -1,0 +1,99 @@
+{
+  "schema": "IAMMAI_STEP2_LIVE_HOLD_v1",
+  "step": 2,
+  "name": "IAMMAI — Live-Hold (Deliberation / Motion-Hold)",
+  "generated_utc": "<UTC_ISO8601>",
+  "constraints": {
+    "execution_power": "NONE",
+    "identity_power": "NONE",
+    "economic_power": "NONE",
+    "mutation": "APPEND_ONLY",
+    "resolution_allowed_here": false
+  },
+
+  "iammai": {
+    "definition": "Live-Hold is the state where reality is admissible, interaction remains unresolved, presence exists without forced decision, and truth is not yet final.",
+    "required_flow": "Recognition → Presence(HOLD) → Resolution",
+    "this_step_represents": "Presence(HOLD) only"
+  },
+
+  "run": {
+    "run_id": "iammai-run-ZA-EXTRA-KRAJ-20251231",
+    "recognized_scope": {
+      "event_id": "ZA-EXTRA-KRAJ-paviljon-5-zagreb-HR",
+      "time_window_utc": {
+        "hold_anchor_start": "2025-12-31T11:15:00Z",
+        "hold_recorded_at": "2025-12-31T11:16:56Z",
+        "hold_anchor_end": "2025-12-31T16:58:00Z"
+      }
+    },
+    "hold": {
+      "state": "HOLD",
+      "notes": [
+        "This artifact records the existence of HOLD as a state.",
+        "This artifact does not perform Resolution and does not declare FINALIZE/INVALIDATE/REVISE."
+      ]
+    },
+    "zivai": {
+      "state": "UNRECORDED_BY_DESIGN",
+      "reason": "ZIVai is live-field only and must not persist state beyond EVENT ⊙. Any capacity state is intentionally absent here."
+    }
+  },
+
+  "evidence": {
+    "sources": [
+      {
+        "source_id": "pop-ledger.log",
+        "format": "text-lines",
+        "lines_verbatim": [
+          "2025-12-31T11:16:56Z | EVENT=ZA-EXTRA-KRAJ-paviljon-5-zagreb-HR | PRESENCE=2025-12-31T11:15:00Z | LINEAGE=⊙ Live field HOLD — zivAI | VALIDATOR=ai-validator-v1",
+          "2025-12-31T16:58:00Z | EVENT=ZA-EXTRA-KRAJ-paviljon-5-zagreb-HR | ACTION=FINALIZE | CONTEXT=event-concluded-live-field | LINEAGE=FINALIZE Event concluded as live field | VALIDATOR=human-governor"
+        ]
+      }
+    ],
+    "claims_supported": [
+      "Presence(HOLD) existed for the declared event scope.",
+      "HOLD was recorded during the live field.",
+      "A later FINALIZE occurred (recorded as evidence, not executed here)."
+    ]
+  },
+
+  "mmai_dependency": {
+    "required": true,
+    "canonical_files_sha256": {
+      "ANCHOR.json": "d665eba4a1124bbcf5a0c6e6f8cf44cd2e55dab9ab969ae7423caf4c1a76782d",
+      "AXIS.prompt.yml": "83bc20d72f31dda31e68ff48337e93d10b57271569c6b688b8baddf4cf48acf0",
+      "CANON.md": "1b298116369af5233ba4c080cc1c03bbdac86d4b4daca2812dfd4d0b0db68045",
+      "LICENSE": "ed05d0646906e06a6b799f216de00fd6db7497ad48c5ed38d89d3b9c35a7b460",
+      "README.md": "8bbdddb8b152a95ebc9719805cbb8bc6ade2f87b3790907b062c28e41f0c2017",
+
+      "protocol/00__CANON.md": "4fc85a336ff75aa86c6a6f2d82c0b09e4b854843520ca7e232f24d399ecb1ee9",
+      "protocol/01__INDEX.md": "9ad9b4340ffcf91fb45c8b7d55dcdb66db9b1f1f82a49e34e4b10c0554cc9ae9",
+      "protocol/02__BPL.md": "cd416c084652d8e52fcfbe15cb675c6bb1917f59b27b35859b667079f2967c1c",
+      "protocol/03__KENTRA_KERNEL.md": "c9711395034c9c15cf006c750b39082a2f0a8a541500fe04ac67f362a1080290",
+      "protocol/04__PROPORTION.md": "f1d6b1753ae6428830a2c32adce769356754d4d7210a26a4988437d8826a8de0",
+      "protocol/05__EVENT.md": "528f8f97dc65a0fd559af444a5feec1982a20fd2a0f81f931b5037df8acc14ea",
+      "protocol/06__IAM_MAI.md": "e10395ec34d255cdd200f34c2ef46ab9165895e87a0f68fd5f0f918ad41d1f7c",
+      "protocol/07__BNK.md": "9b4774a56dc6234c9a5f65f76fd28ec3210649b0c68c1f01d7d4c4341b1486f8",
+      "protocol/08__ZIVAI.md": "df1f1e12278c0b9a2d0b0d99a4fd8c4b7a4312c5e6cdb64fe622cb8f5872c1f6",
+      "protocol/09__22.md": "8b5d2b667f0cb7c71a07cdbf8f4d4f290f3b2f0f1d3c2d5b3d5b94b62b8f0ab2",
+      "protocol/10__KAPIA.md": "b0b5f7fef5e0b31bf0ef7cf77a8acb8e2cb5b0acb6e1d927b0e3df8a7d4f33a8",
+      "protocol/11__POP.md": "c8a1b1c6ef8a7c9d3d8f0b5e8c2e40b34c07a1b3d7d8c9f0e1b2c3d4e5f60718",
+      "protocol/12__SPIRAL.md": "7a2f8b21dbe2648b8c0c7f6b3b3b6d1f08f2a8dc1a0f3dc1b0e7ac89dfed7c2a",
+      "protocol/13__THIRD_SPACE.md": "c7de269d8c7c7b87b6c1db6b6d6aa5d7f8b5f8b0aee7f8c5b3b3f4c7de9f9c7e",
+      "protocol/14__UPAD.md": "f5a61b6a2c7c67f9f7edb5d7a1d9c34b1b6a6f77c22f4b73b4b3c35a9d9f8b24",
+      "protocol/15__ISPAD.md": "d2b3a1c0f8e7d6c5b4a3928170615f4e3d2c1b0a9f8e7d6c5b4a3928170615f4"
+    }
+  },
+
+  "step_2_pass_condition": {
+    "requirement": "Recognition exists and Presence(HOLD) was sustained without premature collapse; this step records HOLD only.",
+    "verification": [
+      "Event scope declared",
+      "HOLD evidence embedded verbatim",
+      "No resolution executed here",
+      "No identity present",
+      "No ZIVai persistence (explicitly absent by design)"
+    ]
+  }
+}
