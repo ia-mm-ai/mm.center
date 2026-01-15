@@ -1,2 +1,2 @@
 # mm.center
-Prompted goals < self-formed, self-maintained ones.
+Self-formed, self-maintained motion intent.
